@@ -1,38 +1,105 @@
+/* Base Styles */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  font-family: Arial, sans-serif;
+  max-width: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App-header {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.theme-selector {
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Full Page Layout */
+.editor-preview-container {
+  display: flex;
+  width: 100%;
+  height: calc(85vh - 100px); /* Adjust for header height */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+textarea {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: none;
+  transition: border-color 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#preview {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Theme 1 */
+.Theme1 {
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+/* Theme 2 */
+.Theme2 {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+/* Theme 3 */
+.Theme3 {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+}
+
+/* Theme 4 */
+.Theme4 {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+/* Theme 5 */
+.Theme5 {
+  background: linear-gradient(to right, #ff0844, #ffb199);
+}
+
+/* Theme 6 */
+.Theme6 {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+/* Theme 7 */
+.Theme7 {
+  background: linear-gradient(to right, #00b09b, #96c93d);
+}
+
+/* Theme 8 */
+.Theme8 {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+}
+
+/* Theme 9 */
+.Theme9 {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);  
+}
+
+/* Theme 10 */
+.Theme10 {
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
 }
